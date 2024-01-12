@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSystem", "CarSystem\CarSystem.csproj", "{1D3B8625-B7D9-4346-8392-A82FAE4FB71D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSystem", "CarSystem\CarSystem.csproj", "{1D3B8625-B7D9-4346-8392-A82FAE4FB71D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{AA4B4C78-E2DD-4882-B99D-091DF298FE86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1D3B8625-B7D9-4346-8392-A82FAE4FB71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D3B8625-B7D9-4346-8392-A82FAE4FB71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D3B8625-B7D9-4346-8392-A82FAE4FB71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA4B4C78-E2DD-4882-B99D-091DF298FE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4B4C78-E2DD-4882-B99D-091DF298FE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4B4C78-E2DD-4882-B99D-091DF298FE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4B4C78-E2DD-4882-B99D-091DF298FE86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
