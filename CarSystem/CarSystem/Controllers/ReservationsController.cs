@@ -49,39 +49,7 @@ namespace CarSystem.Controllers
             return car;
         }
 
-        // PUT: api/Cars/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCar(int id, Reservation car)
-        {
-            if (id != car.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(car).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CarExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Cars
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+       
         [HttpPost]
         [Route("CalculateDiscountedPrice")]
         public ActionResult<double> CalculateDiscountedPrice(Reservation car)
@@ -102,8 +70,8 @@ namespace CarSystem.Controllers
 
 
         [HttpPost]
-        [Route("PostCar")]
-        public async Task<ActionResult<Reservation>> PostCar(Reservation car)
+        [Route("PostReservation")]
+        public async Task<ActionResult<Reservation>> PostReservation(Reservation car)
         {
             _context.Reservation.Add(car);
 
