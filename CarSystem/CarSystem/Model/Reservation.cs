@@ -8,7 +8,8 @@
         public DateTime PickUpDate { get; set; }
         public DateTime DropOffDate { get; set; }
         public string Phone { get; set; }
-
+        public int CarID { get; set; }
+        public int PriceDay { get; set; }
         public string? Description { get; set; }
 
         public double Total { get; set; }
