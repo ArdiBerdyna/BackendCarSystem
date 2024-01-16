@@ -10,6 +10,7 @@ namespace CarSystem.Model
       //  public DbSet<User> Users { get; set; }
         public DbSet<Reservation> Reservation { get; set; }
         public DbSet<Car> CarStock { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
 
 
 

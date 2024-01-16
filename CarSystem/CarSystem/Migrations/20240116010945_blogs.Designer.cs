@@ -4,6 +4,7 @@ using CarSystem.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarSystem.Migrations
 {
     [DbContext(typeof(CarsDbContext))]
-    partial class CarsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240116010945_blogs")]
+    partial class blogs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,8 +39,8 @@ namespace CarSystem.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Description")
+                        .HasColumnType("int");
 
                     b.Property<string>("ImgUrl")
                         .IsRequired()
